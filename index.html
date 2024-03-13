@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dropzone</title>
+    <script src="https://unpkg.com/dropzone@5/dist/min/dropzone.min.js"></script>
+    <link rel="stylesheet" href="https://unpkg.com/dropzone@5/dist/min/dropzone.min.css" type="text/css" />
+</head>
+<body>
+    <form action="https://api.ovp.support/imcinestorage/uploadimage/" class="dropzone" id="my-dropzone" enctype="multipart/form-data"></form>
+</body>
+<script>
+    Dropzone.options.myDropzone = { // camelized version of the `id`
+      paramName: "file", // The name that will be used to transfer the file
+      method: 'POST',
+      headers:{
+        'Authorization':'Bearer ' + 'eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJhdWQiOiJlYWZjZDhjYmY5NGQwMWVjMTVkYzM5Y2JmOTViZTM0MyIsImlhdCI6MTcxMDI4NTA2MywiZXhwIjoxNzEwMjk5NDYzfQ.jBWGMSSuOqswC7XP8zei14McOP6Or1q6MRDmXCTa1aXYmXuhqivq_x7xE-PVQKFHpSZKTSt8tM6WYdAwEf7QQY6ux7iWULV0fcP4u26jQno17nyI7wCY0T55YLonDHiw1aMg2fcK9dYqQUs988oR1gnnN64llLY6QikLeBnfpAIDrC3VERu4sIWzzQKrvC4OrMWGPsRdd4jl9yzHJAOylH2FOOyy5goPbVlcykKwgHyxnWMPiTLPXvBQmJWXLLl9Xyb7nL2Gy9SEbHRSc9GpeVF5YepXdGyvBtThC308eSNqN3G0K7pJc2vJSrJyxymeD2fzad_SThp4NOhWwho8TPGXncIIsvT7GrRrdGwl24RWHMeAdq1TX5UlzmmIl7DcbgqqiuND9CiIcpaQRTaK3BVv5KIzi3V40OOHUVPC23o_QhMVytfajxzBIyteeXUf-3VZm_fYcT6c0rk2G0J0O_vPcNhtuLhYhGVHJb8fINFCHdew-jE33M0hi8dEgXsgigEB-idKgTbRvrl9bEDdvtFkw-5RbkeBipZqIX1-Oz40bfsBcfU7mO4eEJOmfIH5s7m6PNkQ5deeb9aXdPQ0FbCxFyfuBbaIkxXSA3sUYtz-CrGyQijoQibvcpOk-NjrTBD7Jo-4p3-q4BQ5j19WkUGGbD_q8Ap7owbjr0OLKws',
+      }
+    };
+  </script>
+</html>
